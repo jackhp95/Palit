@@ -1,11 +1,14 @@
-module Palit exposing (absolute, absoluteFill, act, appearanceNone, aspectRatio, aspectRatio16x9, aspectRatio1x1, aspectRatio3x4, aspectRatio4x3, aspectRatio4x6, aspectRatio5x7, aspectRatio5x8, aspectRatio6x4, aspectRatio7x5, aspectRatio8x5, aspectRatio9x16, aspectRatioObject, b, bDashed, bDotted, bInherit, bNone, bSolid, ba, bb, bb0, bg, bgBottom, bgCenter, bgInherit, bgLeft, bgRight, bgTop, bl, bl0, black, bn, bold, bottom, br, br0, bt, bt0, bullet, bw, bwScale, c, center, chMin, clip, co, code, collapse, contain, contentAround, contentBetween, contentBox, contentCenter, contentEnd, contentStart, contentStretch, courier, cover, cr, cr100, crBottom, crLeft, crPill, crRight, crScale, crTop, db, di, dib, dit, dn, dt, dtColumn, dtColumnGroup, dtFixed, dtRow, dtRowGroup, dtc, f, fillMin, fixed, flex, flexAuto, flexColumn, flexColumnReverse, flexGrow0, flexGrow1, flexNone, flexNowrap, flexRow, flexRowReverse, flexShrink0, flexShrink1, flexWrap, flexWrapReverse, fsNormal, fw, gap, gpu, grid, hAuto, hInherit, hp, hpMin, hs, hsMin, hsluvToCssString, i, indent, inlineFlex, itemsBaseline, itemsCenter, itemsEnd, itemsStart, itemsStretch, palit, justifyAround, justifyBetween, justifyCenter, justifyEnd, justifyStart, l, leadingScale, left, lengthScale, lh, link, m, ma, mb, measure, measureNarrow, measureWide, mh, ml, mlAuto, mr, mrAuto, mt, mv, mwNone, mwch, mwp, mws, na, nb, nh, nl, noUnderline, normal, nowrap, nr, nt, number, nv, o, order, outline, outline0, outlineTransparent, overflowAuto, overflowContainer, overflowHidden, overflowScroll, overflowVisible, overflowXauto, overflowXhidden, overflowXscroll, overflowXvisible, overflowYauto, overflowYhidden, overflowYscroll, overflowYvisible, pa, pb, percent, ph, pl, pointer, pr, pre, pt, pv, recursiveAdding, reg, relative, right, rotate, sansSerif, selfBaseline, selfCenter, selfEnd, selfStart, selfStretch, serif, shadow, shadowScale, smallCaps, spacingScale, static, sticky, strike, stripeDark, stripeLight, systemSansSerif, systemSerif, tc, textShadow, tj, tl, top, tr, track, trackScale, transparent, truncate, ttc, ttl, ttn, ttu, typeScale, underline, vBase, vBtm, vMid, vTop, vh, vhMax, vhMin, wAuto, wThird, wTwoThirds, wch, white, wp, wpMin, ws, wsMin, wsNormal, z, zInherit, zInitial, zMax, zUnset)
+module Palit exposing (absolute, absoluteFill, act, appearanceNone, aspectRatio, aspectRatio16x9, aspectRatio1x1, aspectRatio3x4, aspectRatio4x3, aspectRatio4x6, aspectRatio5x7, aspectRatio5x8, aspectRatio6x4, aspectRatio7x5, aspectRatio8x5, aspectRatio9x16, aspectRatioObject, b, bDashed, bDotted, bInherit, bNone, bSolid, ba, bb, bb0, bg, bgBottom, bgCenter, bgInherit, bgLeft, bgRight, bgTop, bl, bl0, black, bn, bold, bottom, br, br0, bt, bt0, bullet, bw, bwScale, c, center, chMin, clip, co, code, collapse, contain, contentAround, contentBetween, contentBox, contentCenter, contentEnd, contentStart, contentStretch, courier, cover, cr, cr100, crBottom, crLeft, crPill, crRight, crScale, crTop, db, di, dib, dit, dn, dt, dtColumn, dtColumnGroup, dtFixed, dtRow, dtRowGroup, dtc, f, fillMin, fixed, flex, flexAuto, flexColumn, flexColumnReverse, flexNone, flexNowrap, flexRow, flexRowReverse, flexWrap, flexWrapReverse, fsNormal, fw, gap, gpu, grid, hAuto, hInherit, hp, hpMin, hs, hsMin, hsluvToCssString, i, indent, inlineFlex, itemsBaseline, itemsCenter, itemsEnd, itemsStart, itemsStretch, palit, justifyAround, justifyBetween, justifyCenter, justifyEnd, justifyStart, l, leadingScale, left, lengthScale, lh, link, m, ma, mb, measure, measureNarrow, measureWide, mh, ml, mlAuto, mr, mrAuto, mt, mv, mwNone, mwch, mwp, mws, na, nb, nh, nl, noUnderline, normal, nowrap, nr, nt, number, nv, o, order, outline, outline0, outlineTransparent, overflowAuto, overflowContainer, overflowHidden, overflowScroll, overflowVisible, overflowXauto, overflowXhidden, overflowXscroll, overflowXvisible, overflowYauto, overflowYhidden, overflowYscroll, overflowYvisible, pa, pb, percent, ph, pl, pointer, pr, pre, pt, pv, recursiveAdding, reg, relative, right, rotate, sansSerif, selfBaseline, selfCenter, selfEnd, selfStart, selfStretch, serif, shadow, shadowScale, smallCaps, spacingScale, static, sticky, strike, stripeDark, stripeLight, systemSansSerif, systemSerif, tc, textShadow, tj, tl, top, tr, track, trackScale, transparent, truncate, ttc, ttl, ttn, ttu, typeScale, underline, vBase, vBtm, vMid, vTop, vh, vhMax, vhMin, wAuto, wThird, wTwoThirds, wch, white, wp, wpMin, ws, wsMin, wsNormal, z, zInherit, zInitial, zMax, zUnset, flexGrow, flexShrink, pointerNone, style)
 
-{-| Please do not use this package yet 
+{-| Please do not use this package yet
 
-This is still being developed. Changes will occour. I'll announce on slack once this package is ready.
+This is still being developed. Changes will happen. I'll announce on slack once this package is ready.
+
 
 # WIP
-@docs absolute, absoluteFill, act, appearanceNone, aspectRatio, aspectRatio16x9, aspectRatio1x1, aspectRatio3x4, aspectRatio4x3, aspectRatio4x6, aspectRatio5x7, aspectRatio5x8, aspectRatio6x4, aspectRatio7x5, aspectRatio8x5, aspectRatio9x16, aspectRatioObject, b, bDashed, bDotted, bInherit, bNone, bSolid, ba, bb, bb0, bg, bgBottom, bgCenter, bgInherit, bgLeft, bgRight, bgTop, bl, bl0, black, bn, bold, bottom, br, br0, bt, bt0, bullet, bw, bwScale, c, center, chMin, clip, co, code, collapse, contain, contentAround, contentBetween, contentBox, contentCenter, contentEnd, contentStart, contentStretch, courier, cover, cr, cr100, crBottom, crLeft, crPill, crRight, crScale, crTop, db, di, dib, dit, dn, dt, dtColumn, dtColumnGroup, dtFixed, dtRow, dtRowGroup, dtc, f, fillMin, fixed, flex, flexAuto, flexColumn, flexColumnReverse, flexGrow0, flexGrow1, flexNone, flexNowrap, flexRow, flexRowReverse, flexShrink0, flexShrink1, flexWrap, flexWrapReverse, fsNormal, fw, gap, gpu, grid, hAuto, hInherit, hp, hpMin, hs, hsMin, hsluvToCssString, i, indent, inlineFlex, itemsBaseline, itemsCenter, itemsEnd, itemsStart, itemsStretch, palit, justifyAround, justifyBetween, justifyCenter, justifyEnd, justifyStart, l, leadingScale, left, lengthScale, lh, link, m, ma, mb, measure, measureNarrow, measureWide, mh, ml, mlAuto, mr, mrAuto, mt, mv, mwNone, mwch, mwp, mws, na, nb, nh, nl, noUnderline, normal, nowrap, nr, nt, number, nv, o, order, outline, outline0, outlineTransparent, overflowAuto, overflowContainer, overflowHidden, overflowScroll, overflowVisible, overflowXauto, overflowXhidden, overflowXscroll, overflowXvisible, overflowYauto, overflowYhidden, overflowYscroll, overflowYvisible, pa, pb, percent, ph, pl, pointer, pr, pre, pt, pv, recursiveAdding, reg, relative, right, rotate, sansSerif, selfBaseline, selfCenter, selfEnd, selfStart, selfStretch, serif, shadow, shadowScale, smallCaps, spacingScale, static, sticky, strike, stripeDark, stripeLight, systemSansSerif, systemSerif, tc, textShadow, tj, tl, top, tr, track, trackScale, transparent, truncate, ttc, ttl, ttn, ttu, typeScale, underline, vBase, vBtm, vMid, vTop, vh, vhMax, vhMin, wAuto, wThird, wTwoThirds, wch, white, wp, wpMin, ws, wsMin, wsNormal, z, zInherit, zInitial, zMax, zUnset
+
+@docs absolute, absoluteFill, act, appearanceNone, aspectRatio, aspectRatio16x9, aspectRatio1x1, aspectRatio3x4, aspectRatio4x3, aspectRatio4x6, aspectRatio5x7, aspectRatio5x8, aspectRatio6x4, aspectRatio7x5, aspectRatio8x5, aspectRatio9x16, aspectRatioObject, b, bDashed, bDotted, bInherit, bNone, bSolid, ba, bb, bb0, bg, bgBottom, bgCenter, bgInherit, bgLeft, bgRight, bgTop, bl, bl0, black, bn, bold, bottom, br, br0, bt, bt0, bullet, bw, bwScale, c, center, chMin, clip, co, code, collapse, contain, contentAround, contentBetween, contentBox, contentCenter, contentEnd, contentStart, contentStretch, courier, cover, cr, cr100, crBottom, crLeft, crPill, crRight, crScale, crTop, db, di, dib, dit, dn, dt, dtColumn, dtColumnGroup, dtFixed, dtRow, dtRowGroup, dtc, f, fillMin, fixed, flex, flexAuto, flexColumn, flexColumnReverse, flexNone, flexNowrap, flexRow, flexRowReverse, flexWrap, flexWrapReverse, fsNormal, fw, gap, gpu, grid, hAuto, hInherit, hp, hpMin, hs, hsMin, hsluvToCssString, i, indent, inlineFlex, itemsBaseline, itemsCenter, itemsEnd, itemsStart, itemsStretch, palit, justifyAround, justifyBetween, justifyCenter, justifyEnd, justifyStart, l, leadingScale, left, lengthScale, lh, link, m, ma, mb, measure, measureNarrow, measureWide, mh, ml, mlAuto, mr, mrAuto, mt, mv, mwNone, mwch, mwp, mws, na, nb, nh, nl, noUnderline, normal, nowrap, nr, nt, number, nv, o, order, outline, outline0, outlineTransparent, overflowAuto, overflowContainer, overflowHidden, overflowScroll, overflowVisible, overflowXauto, overflowXhidden, overflowXscroll, overflowXvisible, overflowYauto, overflowYhidden, overflowYscroll, overflowYvisible, pa, pb, percent, ph, pl, pointer, pr, pre, pt, pv, recursiveAdding, reg, relative, right, rotate, sansSerif, selfBaseline, selfCenter, selfEnd, selfStart, selfStretch, serif, shadow, shadowScale, smallCaps, spacingScale, static, sticky, strike, stripeDark, stripeLight, systemSansSerif, systemSerif, tc, textShadow, tj, tl, top, tr, track, trackScale, transparent, truncate, ttc, ttl, ttn, ttu, typeScale, underline, vBase, vBtm, vMid, vTop, vh, vhMax, vhMin, wAuto, wThird, wTwoThirds, wch, white, wp, wpMin, ws, wsMin, wsNormal, z, zInherit, zInitial, zMax, zUnset, flexGrow, flexShrink, pointerNone, style
+
 -}
 
 import Color
@@ -17,21 +20,21 @@ import Html.Styled exposing (Attribute)
 import Html.Styled.Attributes exposing (css)
 
 
-{-| `palit` IS A WORK IN PROGRESS 
+{-| `palit` IS A WORK IN PROGRESS
 -}
 palit : List Style -> Attribute msg
 palit =
     css
 
 
-{-| `reg` IS A WORK IN PROGRESS 
+{-| `reg` IS A WORK IN PROGRESS
 -}
 reg : List Style -> Style
 reg =
     batch
 
 
-{-| `act` IS A WORK IN PROGRESS 
+{-| `act` IS A WORK IN PROGRESS
 -}
 act : List Style -> Style
 act list =
@@ -42,7 +45,7 @@ act list =
 -- COLORS
 
 
-{-| `black` IS A WORK IN PROGRESS 
+{-| `black` IS A WORK IN PROGRESS
 -}
 black : HSLuv
 black =
@@ -54,7 +57,7 @@ black =
         }
 
 
-{-| `white` IS A WORK IN PROGRESS 
+{-| `white` IS A WORK IN PROGRESS
 -}
 white : HSLuv
 white =
@@ -66,7 +69,7 @@ white =
         }
 
 
-{-| `transparent` IS A WORK IN PROGRESS 
+{-| `transparent` IS A WORK IN PROGRESS
 -}
 transparent : HSLuv
 transparent =
@@ -78,7 +81,7 @@ transparent =
         }
 
 
-{-| `hsluvToCssString` IS A WORK IN PROGRESS 
+{-| `hsluvToCssString` IS A WORK IN PROGRESS
 -}
 hsluvToCssString : HSLuv -> String
 hsluvToCssString val =
@@ -86,7 +89,7 @@ hsluvToCssString val =
         |> Color.toCssString
 
 
-{-| `co` IS A WORK IN PROGRESS 
+{-| `co` IS A WORK IN PROGRESS
 -}
 co : Float -> HSLuv -> HSLuv
 co =
@@ -97,7 +100,7 @@ co =
 -- MEDIA QUERIES
 
 
-{-| `m` IS A WORK IN PROGRESS 
+{-| `m` IS A WORK IN PROGRESS
 -}
 m : List Style -> Style
 m list =
@@ -106,7 +109,7 @@ m list =
         list
 
 
-{-| `l` IS A WORK IN PROGRESS 
+{-| `l` IS A WORK IN PROGRESS
 -}
 l : List Style -> Style
 l list =
@@ -119,7 +122,7 @@ l list =
 -- SCALES --
 
 
-{-| `recursiveAdding` IS A WORK IN PROGRESS 
+{-| `recursiveAdding` IS A WORK IN PROGRESS
 -}
 recursiveAdding : Float -> Int -> Float
 recursiveAdding scale val =
@@ -141,14 +144,14 @@ recursiveAdding scale val =
                         val + 1
 
 
-{-| `percent` IS A WORK IN PROGRESS 
+{-| `percent` IS A WORK IN PROGRESS
 -}
 percent : Int -> String
 percent val =
     String.fromInt val ++ "%"
 
 
-{-| `crScale` IS A WORK IN PROGRESS 
+{-| `crScale` IS A WORK IN PROGRESS
 -}
 crScale : Int -> String
 crScale val =
@@ -157,7 +160,7 @@ crScale val =
         |> (\x -> x ++ "rem")
 
 
-{-| `bwScale` IS A WORK IN PROGRESS 
+{-| `bwScale` IS A WORK IN PROGRESS
 -}
 bwScale : Int -> String
 bwScale val =
@@ -166,7 +169,7 @@ bwScale val =
         |> (\x -> x ++ "rem")
 
 
-{-| `shadowScale` IS A WORK IN PROGRESS 
+{-| `shadowScale` IS A WORK IN PROGRESS
 -}
 shadowScale : Float -> HSLuv -> Int -> String
 shadowScale strength color val =
@@ -185,7 +188,7 @@ shadowScale strength color val =
            )
 
 
-{-| `spacingScale` IS A WORK IN PROGRESS 
+{-| `spacingScale` IS A WORK IN PROGRESS
 -}
 spacingScale : Int -> String
 spacingScale val =
@@ -194,7 +197,7 @@ spacingScale val =
         |> (\x -> x ++ "rem")
 
 
-{-| `lengthScale` IS A WORK IN PROGRESS 
+{-| `lengthScale` IS A WORK IN PROGRESS
 -}
 lengthScale : Int -> String
 lengthScale val =
@@ -203,7 +206,7 @@ lengthScale val =
         |> (\x -> x ++ "rem")
 
 
-{-| `trackScale` IS A WORK IN PROGRESS 
+{-| `trackScale` IS A WORK IN PROGRESS
 -}
 trackScale : Int -> String
 trackScale val =
@@ -212,7 +215,7 @@ trackScale val =
         |> (\x -> x ++ "ch")
 
 
-{-| `leadingScale` IS A WORK IN PROGRESS 
+{-| `leadingScale` IS A WORK IN PROGRESS
 -}
 leadingScale : Int -> String
 leadingScale val =
@@ -221,7 +224,7 @@ leadingScale val =
         |> String.fromFloat
 
 
-{-| `typeScale` IS A WORK IN PROGRESS 
+{-| `typeScale` IS A WORK IN PROGRESS
 -}
 typeScale : Int -> String
 typeScale val =
@@ -235,7 +238,15 @@ typeScale val =
 -- EXPOSED
 
 
-{-| `aspectRatio` IS A WORK IN PROGRESS 
+{-| `style` IS A WORK IN PROGRESS
+-}
+style : String -> String -> Style
+style str1 str2 =
+    Css.batch
+        [ property str1 str2 ]
+
+
+{-| `aspectRatio` IS A WORK IN PROGRESS
 -}
 aspectRatio : Style
 aspectRatio =
@@ -245,7 +256,7 @@ aspectRatio =
         ]
 
 
-{-| `aspectRatio16x9` IS A WORK IN PROGRESS 
+{-| `aspectRatio16x9` IS A WORK IN PROGRESS
 -}
 aspectRatio16x9 : Style
 aspectRatio16x9 =
@@ -253,7 +264,7 @@ aspectRatio16x9 =
         [ property "padding-bottom" "56.25%" ]
 
 
-{-| `aspectRatio9x16` IS A WORK IN PROGRESS 
+{-| `aspectRatio9x16` IS A WORK IN PROGRESS
 -}
 aspectRatio9x16 : Style
 aspectRatio9x16 =
@@ -261,7 +272,7 @@ aspectRatio9x16 =
         [ property "padding-bottom" "177.77%" ]
 
 
-{-| `aspectRatio4x3` IS A WORK IN PROGRESS 
+{-| `aspectRatio4x3` IS A WORK IN PROGRESS
 -}
 aspectRatio4x3 : Style
 aspectRatio4x3 =
@@ -269,7 +280,7 @@ aspectRatio4x3 =
         [ property "padding-bottom" "75%" ]
 
 
-{-| `aspectRatio3x4` IS A WORK IN PROGRESS 
+{-| `aspectRatio3x4` IS A WORK IN PROGRESS
 -}
 aspectRatio3x4 : Style
 aspectRatio3x4 =
@@ -277,7 +288,7 @@ aspectRatio3x4 =
         [ property "padding-bottom" "133.33%" ]
 
 
-{-| `aspectRatio6x4` IS A WORK IN PROGRESS 
+{-| `aspectRatio6x4` IS A WORK IN PROGRESS
 -}
 aspectRatio6x4 : Style
 aspectRatio6x4 =
@@ -285,7 +296,7 @@ aspectRatio6x4 =
         [ property "padding-bottom" "66.6%" ]
 
 
-{-| `aspectRatio4x6` IS A WORK IN PROGRESS 
+{-| `aspectRatio4x6` IS A WORK IN PROGRESS
 -}
 aspectRatio4x6 : Style
 aspectRatio4x6 =
@@ -293,7 +304,7 @@ aspectRatio4x6 =
         [ property "padding-bottom" "150%" ]
 
 
-{-| `aspectRatio8x5` IS A WORK IN PROGRESS 
+{-| `aspectRatio8x5` IS A WORK IN PROGRESS
 -}
 aspectRatio8x5 : Style
 aspectRatio8x5 =
@@ -301,7 +312,7 @@ aspectRatio8x5 =
         [ property "padding-bottom" "62.5%" ]
 
 
-{-| `aspectRatio5x8` IS A WORK IN PROGRESS 
+{-| `aspectRatio5x8` IS A WORK IN PROGRESS
 -}
 aspectRatio5x8 : Style
 aspectRatio5x8 =
@@ -309,7 +320,7 @@ aspectRatio5x8 =
         [ property "padding-bottom" "160%" ]
 
 
-{-| `aspectRatio7x5` IS A WORK IN PROGRESS 
+{-| `aspectRatio7x5` IS A WORK IN PROGRESS
 -}
 aspectRatio7x5 : Style
 aspectRatio7x5 =
@@ -317,7 +328,7 @@ aspectRatio7x5 =
         [ property "padding-bottom" "71.42%" ]
 
 
-{-| `aspectRatio5x7` IS A WORK IN PROGRESS 
+{-| `aspectRatio5x7` IS A WORK IN PROGRESS
 -}
 aspectRatio5x7 : Style
 aspectRatio5x7 =
@@ -325,7 +336,7 @@ aspectRatio5x7 =
         [ property "padding-bottom" "140%" ]
 
 
-{-| `aspectRatio1x1` IS A WORK IN PROGRESS 
+{-| `aspectRatio1x1` IS A WORK IN PROGRESS
 -}
 aspectRatio1x1 : Style
 aspectRatio1x1 =
@@ -333,7 +344,7 @@ aspectRatio1x1 =
         [ property "padding-bottom" "100%" ]
 
 
-{-| `aspectRatioObject` IS A WORK IN PROGRESS 
+{-| `aspectRatioObject` IS A WORK IN PROGRESS
 -}
 aspectRatioObject : Style
 aspectRatioObject =
@@ -349,7 +360,7 @@ aspectRatioObject =
         ]
 
 
-{-| `cover` IS A WORK IN PROGRESS 
+{-| `cover` IS A WORK IN PROGRESS
 -}
 cover : Style
 cover =
@@ -359,7 +370,7 @@ cover =
         ]
 
 
-{-| `contain` IS A WORK IN PROGRESS 
+{-| `contain` IS A WORK IN PROGRESS
 -}
 contain : Style
 contain =
@@ -369,7 +380,7 @@ contain =
         ]
 
 
-{-| `bgCenter` IS A WORK IN PROGRESS 
+{-| `bgCenter` IS A WORK IN PROGRESS
 -}
 bgCenter : Style
 bgCenter =
@@ -377,7 +388,7 @@ bgCenter =
         [ property "background-position" "50%" ]
 
 
-{-| `bgTop` IS A WORK IN PROGRESS 
+{-| `bgTop` IS A WORK IN PROGRESS
 -}
 bgTop : Style
 bgTop =
@@ -385,7 +396,7 @@ bgTop =
         [ property "background-position" "top" ]
 
 
-{-| `bgRight` IS A WORK IN PROGRESS 
+{-| `bgRight` IS A WORK IN PROGRESS
 -}
 bgRight : Style
 bgRight =
@@ -393,7 +404,7 @@ bgRight =
         [ property "background-position" "100%" ]
 
 
-{-| `bgBottom` IS A WORK IN PROGRESS 
+{-| `bgBottom` IS A WORK IN PROGRESS
 -}
 bgBottom : Style
 bgBottom =
@@ -401,7 +412,7 @@ bgBottom =
         [ property "background-position" "bottom" ]
 
 
-{-| `bgLeft` IS A WORK IN PROGRESS 
+{-| `bgLeft` IS A WORK IN PROGRESS
 -}
 bgLeft : Style
 bgLeft =
@@ -409,7 +420,7 @@ bgLeft =
         [ property "background-position" "0" ]
 
 
-{-| `outline` IS A WORK IN PROGRESS 
+{-| `outline` IS A WORK IN PROGRESS
 -}
 outline : Style
 outline =
@@ -417,7 +428,7 @@ outline =
         [ property "outline" "1px solid" ]
 
 
-{-| `outlineTransparent` IS A WORK IN PROGRESS 
+{-| `outlineTransparent` IS A WORK IN PROGRESS
 -}
 outlineTransparent : Style
 outlineTransparent =
@@ -425,7 +436,7 @@ outlineTransparent =
         [ property "outline" "1px solid transparent" ]
 
 
-{-| `outline0` IS A WORK IN PROGRESS 
+{-| `outline0` IS A WORK IN PROGRESS
 -}
 outline0 : Style
 outline0 =
@@ -433,7 +444,7 @@ outline0 =
         [ property "outline" "0" ]
 
 
-{-| `ba` IS A WORK IN PROGRESS 
+{-| `ba` IS A WORK IN PROGRESS
 -}
 ba : Style
 ba =
@@ -443,7 +454,7 @@ ba =
         ]
 
 
-{-| `bt` IS A WORK IN PROGRESS 
+{-| `bt` IS A WORK IN PROGRESS
 -}
 bt : Style
 bt =
@@ -453,7 +464,7 @@ bt =
         ]
 
 
-{-| `br` IS A WORK IN PROGRESS 
+{-| `br` IS A WORK IN PROGRESS
 -}
 br : Style
 br =
@@ -463,7 +474,7 @@ br =
         ]
 
 
-{-| `bb` IS A WORK IN PROGRESS 
+{-| `bb` IS A WORK IN PROGRESS
 -}
 bb : Style
 bb =
@@ -473,7 +484,7 @@ bb =
         ]
 
 
-{-| `bl` IS A WORK IN PROGRESS 
+{-| `bl` IS A WORK IN PROGRESS
 -}
 bl : Style
 bl =
@@ -483,7 +494,7 @@ bl =
         ]
 
 
-{-| `bn` IS A WORK IN PROGRESS 
+{-| `bn` IS A WORK IN PROGRESS
 -}
 bn : Style
 bn =
@@ -493,7 +504,7 @@ bn =
         ]
 
 
-{-| `cr` IS A WORK IN PROGRESS 
+{-| `cr` IS A WORK IN PROGRESS
 -}
 cr : Int -> Style
 cr val =
@@ -501,7 +512,7 @@ cr val =
         [ property "border-radius" <| crScale val ]
 
 
-{-| `cr100` IS A WORK IN PROGRESS 
+{-| `cr100` IS A WORK IN PROGRESS
 -}
 cr100 : Style
 cr100 =
@@ -509,7 +520,7 @@ cr100 =
         [ property "border-radius" "100%" ]
 
 
-{-| `crPill` IS A WORK IN PROGRESS 
+{-| `crPill` IS A WORK IN PROGRESS
 -}
 crPill : Style
 crPill =
@@ -517,7 +528,7 @@ crPill =
         [ property "border-radius" "9999px" ]
 
 
-{-| `crBottom` IS A WORK IN PROGRESS 
+{-| `crBottom` IS A WORK IN PROGRESS
 -}
 crBottom : Style
 crBottom =
@@ -527,7 +538,7 @@ crBottom =
         ]
 
 
-{-| `crTop` IS A WORK IN PROGRESS 
+{-| `crTop` IS A WORK IN PROGRESS
 -}
 crTop : Style
 crTop =
@@ -537,7 +548,7 @@ crTop =
         ]
 
 
-{-| `crRight` IS A WORK IN PROGRESS 
+{-| `crRight` IS A WORK IN PROGRESS
 -}
 crRight : Style
 crRight =
@@ -547,7 +558,7 @@ crRight =
         ]
 
 
-{-| `crLeft` IS A WORK IN PROGRESS 
+{-| `crLeft` IS A WORK IN PROGRESS
 -}
 crLeft : Style
 crLeft =
@@ -557,7 +568,7 @@ crLeft =
         ]
 
 
-{-| `bDotted` IS A WORK IN PROGRESS 
+{-| `bDotted` IS A WORK IN PROGRESS
 -}
 bDotted : Style
 bDotted =
@@ -565,7 +576,7 @@ bDotted =
         [ property "border-style" "dotted" ]
 
 
-{-| `bDashed` IS A WORK IN PROGRESS 
+{-| `bDashed` IS A WORK IN PROGRESS
 -}
 bDashed : Style
 bDashed =
@@ -573,7 +584,7 @@ bDashed =
         [ property "border-style" "dashed" ]
 
 
-{-| `bSolid` IS A WORK IN PROGRESS 
+{-| `bSolid` IS A WORK IN PROGRESS
 -}
 bSolid : Style
 bSolid =
@@ -581,7 +592,7 @@ bSolid =
         [ property "border-style" "solid" ]
 
 
-{-| `bNone` IS A WORK IN PROGRESS 
+{-| `bNone` IS A WORK IN PROGRESS
 -}
 bNone : Style
 bNone =
@@ -589,7 +600,7 @@ bNone =
         [ property "border-style" "none" ]
 
 
-{-| `bw` IS A WORK IN PROGRESS 
+{-| `bw` IS A WORK IN PROGRESS
 -}
 bw : Int -> Style
 bw val =
@@ -597,7 +608,7 @@ bw val =
         [ property "border-width" <| bwScale val ]
 
 
-{-| `bt0` IS A WORK IN PROGRESS 
+{-| `bt0` IS A WORK IN PROGRESS
 -}
 bt0 : Style
 bt0 =
@@ -605,7 +616,7 @@ bt0 =
         [ property "border-top-width" "0" ]
 
 
-{-| `br0` IS A WORK IN PROGRESS 
+{-| `br0` IS A WORK IN PROGRESS
 -}
 br0 : Style
 br0 =
@@ -613,7 +624,7 @@ br0 =
         [ property "border-right-width" "0" ]
 
 
-{-| `bb0` IS A WORK IN PROGRESS 
+{-| `bb0` IS A WORK IN PROGRESS
 -}
 bb0 : Style
 bb0 =
@@ -621,7 +632,7 @@ bb0 =
         [ property "border-bottom-width" "0" ]
 
 
-{-| `bl0` IS A WORK IN PROGRESS 
+{-| `bl0` IS A WORK IN PROGRESS
 -}
 bl0 : Style
 bl0 =
@@ -629,7 +640,7 @@ bl0 =
         [ property "border-left-width" "0" ]
 
 
-{-| `shadow` IS A WORK IN PROGRESS 
+{-| `shadow` IS A WORK IN PROGRESS
 -}
 shadow : HSLuv -> Int -> Style
 shadow color val =
@@ -637,7 +648,7 @@ shadow color val =
         [ property "box-shadow" <| shadowScale 4 color val ]
 
 
-{-| `textShadow` IS A WORK IN PROGRESS 
+{-| `textShadow` IS A WORK IN PROGRESS
 -}
 textShadow : HSLuv -> Int -> Style
 textShadow color val =
@@ -645,7 +656,7 @@ textShadow color val =
         [ property "text-shadow" <| shadowScale 1 color val ]
 
 
-{-| `top` IS A WORK IN PROGRESS 
+{-| `top` IS A WORK IN PROGRESS
 -}
 top : Int -> Style
 top val =
@@ -653,7 +664,7 @@ top val =
         [ property "top" <| spacingScale val ]
 
 
-{-| `right` IS A WORK IN PROGRESS 
+{-| `right` IS A WORK IN PROGRESS
 -}
 right : Int -> Style
 right val =
@@ -661,7 +672,7 @@ right val =
         [ property "right" <| spacingScale val ]
 
 
-{-| `bottom` IS A WORK IN PROGRESS 
+{-| `bottom` IS A WORK IN PROGRESS
 -}
 bottom : Int -> Style
 bottom val =
@@ -669,7 +680,7 @@ bottom val =
         [ property "bottom" <| spacingScale val ]
 
 
-{-| `left` IS A WORK IN PROGRESS 
+{-| `left` IS A WORK IN PROGRESS
 -}
 left : Int -> Style
 left val =
@@ -677,7 +688,7 @@ left val =
         [ property "left" <| spacingScale val ]
 
 
-{-| `absoluteFill` IS A WORK IN PROGRESS 
+{-| `absoluteFill` IS A WORK IN PROGRESS
 -}
 absoluteFill : Style
 absoluteFill =
@@ -689,7 +700,7 @@ absoluteFill =
         ]
 
 
-{-| `dn` IS A WORK IN PROGRESS 
+{-| `dn` IS A WORK IN PROGRESS
 -}
 dn : Style
 dn =
@@ -697,7 +708,7 @@ dn =
         [ property "display" "none" ]
 
 
-{-| `di` IS A WORK IN PROGRESS 
+{-| `di` IS A WORK IN PROGRESS
 -}
 di : Style
 di =
@@ -705,7 +716,7 @@ di =
         [ property "display" "inline" ]
 
 
-{-| `db` IS A WORK IN PROGRESS 
+{-| `db` IS A WORK IN PROGRESS
 -}
 db : Style
 db =
@@ -713,7 +724,7 @@ db =
         [ property "display" "block" ]
 
 
-{-| `dib` IS A WORK IN PROGRESS 
+{-| `dib` IS A WORK IN PROGRESS
 -}
 dib : Style
 dib =
@@ -721,7 +732,7 @@ dib =
         [ property "display" "inline-block" ]
 
 
-{-| `dit` IS A WORK IN PROGRESS 
+{-| `dit` IS A WORK IN PROGRESS
 -}
 dit : Style
 dit =
@@ -729,7 +740,7 @@ dit =
         [ property "display" "inline-table" ]
 
 
-{-| `dt` IS A WORK IN PROGRESS 
+{-| `dt` IS A WORK IN PROGRESS
 -}
 dt : Style
 dt =
@@ -737,7 +748,7 @@ dt =
         [ property "display" "table" ]
 
 
-{-| `dtc` IS A WORK IN PROGRESS 
+{-| `dtc` IS A WORK IN PROGRESS
 -}
 dtc : Style
 dtc =
@@ -745,7 +756,7 @@ dtc =
         [ property "display" "table-cell" ]
 
 
-{-| `dtRow` IS A WORK IN PROGRESS 
+{-| `dtRow` IS A WORK IN PROGRESS
 -}
 dtRow : Style
 dtRow =
@@ -753,7 +764,7 @@ dtRow =
         [ property "display" "table-row" ]
 
 
-{-| `dtRowGroup` IS A WORK IN PROGRESS 
+{-| `dtRowGroup` IS A WORK IN PROGRESS
 -}
 dtRowGroup : Style
 dtRowGroup =
@@ -761,7 +772,7 @@ dtRowGroup =
         [ property "display" "table-row-group" ]
 
 
-{-| `dtColumn` IS A WORK IN PROGRESS 
+{-| `dtColumn` IS A WORK IN PROGRESS
 -}
 dtColumn : Style
 dtColumn =
@@ -769,7 +780,7 @@ dtColumn =
         [ property "display" "table-column" ]
 
 
-{-| `dtColumnGroup` IS A WORK IN PROGRESS 
+{-| `dtColumnGroup` IS A WORK IN PROGRESS
 -}
 dtColumnGroup : Style
 dtColumnGroup =
@@ -777,7 +788,7 @@ dtColumnGroup =
         [ property "display" "table-column-group" ]
 
 
-{-| `dtFixed` IS A WORK IN PROGRESS 
+{-| `dtFixed` IS A WORK IN PROGRESS
 -}
 dtFixed : Style
 dtFixed =
@@ -787,7 +798,7 @@ dtFixed =
         ]
 
 
-{-| `grid` IS A WORK IN PROGRESS 
+{-| `grid` IS A WORK IN PROGRESS
 -}
 grid : Int -> Style
 grid val =
@@ -800,7 +811,7 @@ grid val =
         ]
 
 
-{-| `gap` IS A WORK IN PROGRESS 
+{-| `gap` IS A WORK IN PROGRESS
 -}
 gap : Int -> Style
 gap val =
@@ -817,7 +828,7 @@ gap val =
 -- = Css.batch [ property "grid-auto-flow" "dense"]
 
 
-{-| `flex` IS A WORK IN PROGRESS 
+{-| `flex` IS A WORK IN PROGRESS
 -}
 flex : Style
 flex =
@@ -825,7 +836,7 @@ flex =
         [ property "display" "flex" ]
 
 
-{-| `inlineFlex` IS A WORK IN PROGRESS 
+{-| `inlineFlex` IS A WORK IN PROGRESS
 -}
 inlineFlex : Style
 inlineFlex =
@@ -833,7 +844,7 @@ inlineFlex =
         [ property "display" "inline-flex" ]
 
 
-{-| `flexAuto` IS A WORK IN PROGRESS 
+{-| `flexAuto` IS A WORK IN PROGRESS
 -}
 flexAuto : Style
 flexAuto =
@@ -844,7 +855,7 @@ flexAuto =
         ]
 
 
-{-| `flexNone` IS A WORK IN PROGRESS 
+{-| `flexNone` IS A WORK IN PROGRESS
 -}
 flexNone : Style
 flexNone =
@@ -852,7 +863,7 @@ flexNone =
         [ property "flex" "none" ]
 
 
-{-| `flexColumn` IS A WORK IN PROGRESS 
+{-| `flexColumn` IS A WORK IN PROGRESS
 -}
 flexColumn : Style
 flexColumn =
@@ -860,7 +871,7 @@ flexColumn =
         [ property "flex-direction" "column" ]
 
 
-{-| `flexRow` IS A WORK IN PROGRESS 
+{-| `flexRow` IS A WORK IN PROGRESS
 -}
 flexRow : Style
 flexRow =
@@ -868,7 +879,7 @@ flexRow =
         [ property "flex-direction" "row" ]
 
 
-{-| `flexWrap` IS A WORK IN PROGRESS 
+{-| `flexWrap` IS A WORK IN PROGRESS
 -}
 flexWrap : Style
 flexWrap =
@@ -876,7 +887,7 @@ flexWrap =
         [ property "flex-wrap" "wrap" ]
 
 
-{-| `flexNowrap` IS A WORK IN PROGRESS 
+{-| `flexNowrap` IS A WORK IN PROGRESS
 -}
 flexNowrap : Style
 flexNowrap =
@@ -884,7 +895,7 @@ flexNowrap =
         [ property "flex-wrap" "nowrap" ]
 
 
-{-| `flexWrapReverse` IS A WORK IN PROGRESS 
+{-| `flexWrapReverse` IS A WORK IN PROGRESS
 -}
 flexWrapReverse : Style
 flexWrapReverse =
@@ -892,7 +903,7 @@ flexWrapReverse =
         [ property "flex-wrap" "wrap-reverse" ]
 
 
-{-| `flexColumnReverse` IS A WORK IN PROGRESS 
+{-| `flexColumnReverse` IS A WORK IN PROGRESS
 -}
 flexColumnReverse : Style
 flexColumnReverse =
@@ -900,7 +911,7 @@ flexColumnReverse =
         [ property "flex-direction" "column-reverse" ]
 
 
-{-| `flexRowReverse` IS A WORK IN PROGRESS 
+{-| `flexRowReverse` IS A WORK IN PROGRESS
 -}
 flexRowReverse : Style
 flexRowReverse =
@@ -908,7 +919,7 @@ flexRowReverse =
         [ property "flex-direction" "row-reverse" ]
 
 
-{-| `itemsStart` IS A WORK IN PROGRESS 
+{-| `itemsStart` IS A WORK IN PROGRESS
 -}
 itemsStart : Style
 itemsStart =
@@ -916,7 +927,7 @@ itemsStart =
         [ property "align-items" "flex-start" ]
 
 
-{-| `itemsEnd` IS A WORK IN PROGRESS 
+{-| `itemsEnd` IS A WORK IN PROGRESS
 -}
 itemsEnd : Style
 itemsEnd =
@@ -924,7 +935,7 @@ itemsEnd =
         [ property "align-items" "flex-end" ]
 
 
-{-| `itemsCenter` IS A WORK IN PROGRESS 
+{-| `itemsCenter` IS A WORK IN PROGRESS
 -}
 itemsCenter : Style
 itemsCenter =
@@ -932,7 +943,7 @@ itemsCenter =
         [ property "align-items" "center" ]
 
 
-{-| `itemsBaseline` IS A WORK IN PROGRESS 
+{-| `itemsBaseline` IS A WORK IN PROGRESS
 -}
 itemsBaseline : Style
 itemsBaseline =
@@ -940,7 +951,7 @@ itemsBaseline =
         [ property "align-items" "baseline" ]
 
 
-{-| `itemsStretch` IS A WORK IN PROGRESS 
+{-| `itemsStretch` IS A WORK IN PROGRESS
 -}
 itemsStretch : Style
 itemsStretch =
@@ -948,7 +959,7 @@ itemsStretch =
         [ property "align-items" "stretch" ]
 
 
-{-| `selfStart` IS A WORK IN PROGRESS 
+{-| `selfStart` IS A WORK IN PROGRESS
 -}
 selfStart : Style
 selfStart =
@@ -956,7 +967,7 @@ selfStart =
         [ property "align-self" "flex-start" ]
 
 
-{-| `selfEnd` IS A WORK IN PROGRESS 
+{-| `selfEnd` IS A WORK IN PROGRESS
 -}
 selfEnd : Style
 selfEnd =
@@ -964,7 +975,7 @@ selfEnd =
         [ property "align-self" "flex-end" ]
 
 
-{-| `selfCenter` IS A WORK IN PROGRESS 
+{-| `selfCenter` IS A WORK IN PROGRESS
 -}
 selfCenter : Style
 selfCenter =
@@ -972,7 +983,7 @@ selfCenter =
         [ property "align-self" "center" ]
 
 
-{-| `selfBaseline` IS A WORK IN PROGRESS 
+{-| `selfBaseline` IS A WORK IN PROGRESS
 -}
 selfBaseline : Style
 selfBaseline =
@@ -980,7 +991,7 @@ selfBaseline =
         [ property "align-self" "baseline" ]
 
 
-{-| `selfStretch` IS A WORK IN PROGRESS 
+{-| `selfStretch` IS A WORK IN PROGRESS
 -}
 selfStretch : Style
 selfStretch =
@@ -988,7 +999,7 @@ selfStretch =
         [ property "align-self" "stretch" ]
 
 
-{-| `justifyStart` IS A WORK IN PROGRESS 
+{-| `justifyStart` IS A WORK IN PROGRESS
 -}
 justifyStart : Style
 justifyStart =
@@ -996,7 +1007,7 @@ justifyStart =
         [ property "justify-content" "flex-start" ]
 
 
-{-| `justifyEnd` IS A WORK IN PROGRESS 
+{-| `justifyEnd` IS A WORK IN PROGRESS
 -}
 justifyEnd : Style
 justifyEnd =
@@ -1004,7 +1015,7 @@ justifyEnd =
         [ property "justify-content" "flex-end" ]
 
 
-{-| `justifyCenter` IS A WORK IN PROGRESS 
+{-| `justifyCenter` IS A WORK IN PROGRESS
 -}
 justifyCenter : Style
 justifyCenter =
@@ -1012,7 +1023,7 @@ justifyCenter =
         [ property "justify-content" "center" ]
 
 
-{-| `justifyBetween` IS A WORK IN PROGRESS 
+{-| `justifyBetween` IS A WORK IN PROGRESS
 -}
 justifyBetween : Style
 justifyBetween =
@@ -1020,7 +1031,7 @@ justifyBetween =
         [ property "justify-content" "space-between" ]
 
 
-{-| `justifyAround` IS A WORK IN PROGRESS 
+{-| `justifyAround` IS A WORK IN PROGRESS
 -}
 justifyAround : Style
 justifyAround =
@@ -1028,7 +1039,7 @@ justifyAround =
         [ property "justify-content" "space-around" ]
 
 
-{-| `contentStart` IS A WORK IN PROGRESS 
+{-| `contentStart` IS A WORK IN PROGRESS
 -}
 contentStart : Style
 contentStart =
@@ -1036,7 +1047,7 @@ contentStart =
         [ property "align-content" "flex-start" ]
 
 
-{-| `contentEnd` IS A WORK IN PROGRESS 
+{-| `contentEnd` IS A WORK IN PROGRESS
 -}
 contentEnd : Style
 contentEnd =
@@ -1044,7 +1055,7 @@ contentEnd =
         [ property "align-content" "flex-end" ]
 
 
-{-| `contentCenter` IS A WORK IN PROGRESS 
+{-| `contentCenter` IS A WORK IN PROGRESS
 -}
 contentCenter : Style
 contentCenter =
@@ -1052,7 +1063,7 @@ contentCenter =
         [ property "align-content" "center" ]
 
 
-{-| `contentBetween` IS A WORK IN PROGRESS 
+{-| `contentBetween` IS A WORK IN PROGRESS
 -}
 contentBetween : Style
 contentBetween =
@@ -1060,7 +1071,7 @@ contentBetween =
         [ property "align-content" "space-between" ]
 
 
-{-| `contentAround` IS A WORK IN PROGRESS 
+{-| `contentAround` IS A WORK IN PROGRESS
 -}
 contentAround : Style
 contentAround =
@@ -1068,7 +1079,7 @@ contentAround =
         [ property "align-content" "space-around" ]
 
 
-{-| `contentStretch` IS A WORK IN PROGRESS 
+{-| `contentStretch` IS A WORK IN PROGRESS
 -}
 contentStretch : Style
 contentStretch =
@@ -1076,7 +1087,7 @@ contentStretch =
         [ property "align-content" "stretch" ]
 
 
-{-| `order` IS A WORK IN PROGRESS 
+{-| `order` IS A WORK IN PROGRESS
 -}
 order : Int -> Style
 order val =
@@ -1084,39 +1095,23 @@ order val =
         [ property "order" <| String.fromInt val ]
 
 
-{-| `flexGrow0` IS A WORK IN PROGRESS 
+{-| `flexGrow` IS A WORK IN PROGRESS
 -}
-flexGrow0 : Style
-flexGrow0 =
+flexGrow : Int -> Style
+flexGrow val =
     Css.batch
-        [ property "flex-grow" "0" ]
+        [ property "flex-grow" <| String.fromInt val ]
 
 
-{-| `flexGrow1` IS A WORK IN PROGRESS 
+{-| `flexShrink` IS A WORK IN PROGRESS
 -}
-flexGrow1 : Style
-flexGrow1 =
+flexShrink : Int -> Style
+flexShrink val =
     Css.batch
-        [ property "flex-grow" "1" ]
+        [ property "flex-shrink" <| String.fromInt val ]
 
 
-{-| `flexShrink0` IS A WORK IN PROGRESS 
--}
-flexShrink0 : Style
-flexShrink0 =
-    Css.batch
-        [ property "flex-shrink" "0" ]
-
-
-{-| `flexShrink1` IS A WORK IN PROGRESS 
--}
-flexShrink1 : Style
-flexShrink1 =
-    Css.batch
-        [ property "flex-shrink" "1" ]
-
-
-{-| `sansSerif` IS A WORK IN PROGRESS 
+{-| `sansSerif` IS A WORK IN PROGRESS
 -}
 sansSerif : Style
 sansSerif =
@@ -1124,7 +1119,7 @@ sansSerif =
         [ property "font-family" "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif" ]
 
 
-{-| `serif` IS A WORK IN PROGRESS 
+{-| `serif` IS A WORK IN PROGRESS
 -}
 serif : Style
 serif =
@@ -1132,7 +1127,7 @@ serif =
         [ property "font-family" "georgia,times,serif" ]
 
 
-{-| `systemSansSerif` IS A WORK IN PROGRESS 
+{-| `systemSansSerif` IS A WORK IN PROGRESS
 -}
 systemSansSerif : Style
 systemSansSerif =
@@ -1140,7 +1135,7 @@ systemSansSerif =
         [ property "font-family" "sans-serif" ]
 
 
-{-| `systemSerif` IS A WORK IN PROGRESS 
+{-| `systemSerif` IS A WORK IN PROGRESS
 -}
 systemSerif : Style
 systemSerif =
@@ -1148,7 +1143,7 @@ systemSerif =
         [ property "font-family" "serif" ]
 
 
-{-| `code` IS A WORK IN PROGRESS 
+{-| `code` IS A WORK IN PROGRESS
 -}
 code : Style
 code =
@@ -1156,7 +1151,7 @@ code =
         [ property "font-family" "Consolas,monaco,monospace" ]
 
 
-{-| `courier` IS A WORK IN PROGRESS 
+{-| `courier` IS A WORK IN PROGRESS
 -}
 courier : Style
 courier =
@@ -1164,7 +1159,7 @@ courier =
         [ property "font-family" "Courier Next,courier,monospace" ]
 
 
-{-| `i` IS A WORK IN PROGRESS 
+{-| `i` IS A WORK IN PROGRESS
 -}
 i : Style
 i =
@@ -1172,7 +1167,7 @@ i =
         [ property "font-style" "italic" ]
 
 
-{-| `fsNormal` IS A WORK IN PROGRESS 
+{-| `fsNormal` IS A WORK IN PROGRESS
 -}
 fsNormal : Style
 fsNormal =
@@ -1180,7 +1175,7 @@ fsNormal =
         [ property "font-style" "normal" ]
 
 
-{-| `normal` IS A WORK IN PROGRESS 
+{-| `normal` IS A WORK IN PROGRESS
 -}
 normal : Style
 normal =
@@ -1188,7 +1183,7 @@ normal =
         [ property "font-weight" "400" ]
 
 
-{-| `bold` IS A WORK IN PROGRESS 
+{-| `bold` IS A WORK IN PROGRESS
 -}
 bold : Style
 bold =
@@ -1196,7 +1191,7 @@ bold =
         [ property "font-weight" "700" ]
 
 
-{-| `fw` IS A WORK IN PROGRESS 
+{-| `fw` IS A WORK IN PROGRESS
 -}
 fw : Int -> Style
 fw val =
@@ -1204,7 +1199,7 @@ fw val =
         [ property "font-weight" <| String.fromInt <| val * 100 ]
 
 
-{-| `appearanceNone` IS A WORK IN PROGRESS 
+{-| `appearanceNone` IS A WORK IN PROGRESS
 -}
 appearanceNone : Style
 appearanceNone =
@@ -1216,7 +1211,7 @@ appearanceNone =
         ]
 
 
-{-| `hs` IS A WORK IN PROGRESS 
+{-| `hs` IS A WORK IN PROGRESS
 -}
 hs : Int -> Style
 hs val =
@@ -1224,7 +1219,7 @@ hs val =
         [ property "height" <| lengthScale val ]
 
 
-{-| `hsMin` IS A WORK IN PROGRESS 
+{-| `hsMin` IS A WORK IN PROGRESS
 -}
 hsMin : Int -> Style
 hsMin val =
@@ -1232,7 +1227,7 @@ hsMin val =
         [ property "min-height" <| lengthScale val ]
 
 
-{-| `hp` IS A WORK IN PROGRESS 
+{-| `hp` IS A WORK IN PROGRESS
 -}
 hp : Int -> Style
 hp val =
@@ -1240,7 +1235,7 @@ hp val =
         [ property "height" <| percent val ]
 
 
-{-| `vhMax` IS A WORK IN PROGRESS 
+{-| `vhMax` IS A WORK IN PROGRESS
 -}
 vhMax : Int -> Style
 vhMax val =
@@ -1248,7 +1243,7 @@ vhMax val =
         [ property "max-height" <| String.fromInt val ++ "vh" ]
 
 
-{-| `hpMin` IS A WORK IN PROGRESS 
+{-| `hpMin` IS A WORK IN PROGRESS
 -}
 hpMin : Int -> Style
 hpMin val =
@@ -1256,7 +1251,7 @@ hpMin val =
         [ property "min-height" <| percent val ]
 
 
-{-| `vh` IS A WORK IN PROGRESS 
+{-| `vh` IS A WORK IN PROGRESS
 -}
 vh : Int -> Style
 vh val =
@@ -1264,7 +1259,7 @@ vh val =
         [ property "height" <| String.fromInt val ++ "vh" ]
 
 
-{-| `vhMin` IS A WORK IN PROGRESS 
+{-| `vhMin` IS A WORK IN PROGRESS
 -}
 vhMin : Int -> Style
 vhMin val =
@@ -1272,7 +1267,7 @@ vhMin val =
         [ property "min-height" <| String.fromInt val ++ "vh" ]
 
 
-{-| `hAuto` IS A WORK IN PROGRESS 
+{-| `hAuto` IS A WORK IN PROGRESS
 -}
 hAuto : Style
 hAuto =
@@ -1280,7 +1275,7 @@ hAuto =
         [ property "height" "auto" ]
 
 
-{-| `hInherit` IS A WORK IN PROGRESS 
+{-| `hInherit` IS A WORK IN PROGRESS
 -}
 hInherit : Style
 hInherit =
@@ -1288,7 +1283,7 @@ hInherit =
         [ property "height" "inherit" ]
 
 
-{-| `track` IS A WORK IN PROGRESS 
+{-| `track` IS A WORK IN PROGRESS
 -}
 track : Int -> Style
 track val =
@@ -1296,7 +1291,7 @@ track val =
         [ property "letter-spacing" <| trackScale val ]
 
 
-{-| `lh` IS A WORK IN PROGRESS 
+{-| `lh` IS A WORK IN PROGRESS
 -}
 lh : Int -> Style
 lh val =
@@ -1304,7 +1299,7 @@ lh val =
         [ property "line-height" <| leadingScale val ]
 
 
-{-| `fillMin` IS A WORK IN PROGRESS 
+{-| `fillMin` IS A WORK IN PROGRESS
 -}
 fillMin : Style
 fillMin =
@@ -1314,7 +1309,7 @@ fillMin =
         ]
 
 
-{-| `pointer` IS A WORK IN PROGRESS 
+{-| `pointer` IS A WORK IN PROGRESS
 -}
 pointer : Style
 pointer =
@@ -1322,7 +1317,15 @@ pointer =
         [ property "cursor" "pointer" ]
 
 
-{-| `link` IS A WORK IN PROGRESS 
+{-| `pointerNone` IS A WORK IN PROGRESS
+-}
+pointerNone : Style
+pointerNone =
+    Css.batch
+        [ property "pointer-events" "none" ]
+
+
+{-| `link` IS A WORK IN PROGRESS
 -}
 link : HSLuv -> Style
 link color =
@@ -1351,7 +1354,7 @@ link color =
         ]
 
 
-{-| `bullet` IS A WORK IN PROGRESS 
+{-| `bullet` IS A WORK IN PROGRESS
 -}
 bullet : Style
 bullet =
@@ -1359,7 +1362,7 @@ bullet =
         [ property "list-style-type" "disc" ]
 
 
-{-| `number` IS A WORK IN PROGRESS 
+{-| `number` IS A WORK IN PROGRESS
 -}
 number : Style
 number =
@@ -1367,7 +1370,7 @@ number =
         [ property "list-style-type" "decimal" ]
 
 
-{-| `mwp` IS A WORK IN PROGRESS 
+{-| `mwp` IS A WORK IN PROGRESS
 -}
 mwp : Int -> Style
 mwp val =
@@ -1375,7 +1378,7 @@ mwp val =
         [ property "max-width" <| percent val ]
 
 
-{-| `mwch` IS A WORK IN PROGRESS 
+{-| `mwch` IS A WORK IN PROGRESS
 -}
 mwch : Int -> Style
 mwch val =
@@ -1383,7 +1386,7 @@ mwch val =
         [ property "max-width" <| String.fromInt val ++ "ch" ]
 
 
-{-| `mws` IS A WORK IN PROGRESS 
+{-| `mws` IS A WORK IN PROGRESS
 -}
 mws : Int -> Style
 mws val =
@@ -1391,7 +1394,7 @@ mws val =
         [ property "max-width" <| lengthScale val ]
 
 
-{-| `mwNone` IS A WORK IN PROGRESS 
+{-| `mwNone` IS A WORK IN PROGRESS
 -}
 mwNone : Style
 mwNone =
@@ -1399,7 +1402,7 @@ mwNone =
         [ property "max-width" "none" ]
 
 
-{-| `wch` IS A WORK IN PROGRESS 
+{-| `wch` IS A WORK IN PROGRESS
 -}
 wch : Int -> Style
 wch val =
@@ -1407,7 +1410,7 @@ wch val =
         [ property "width" <| String.fromInt val ++ "ch" ]
 
 
-{-| `ws` IS A WORK IN PROGRESS 
+{-| `ws` IS A WORK IN PROGRESS
 -}
 ws : Int -> Style
 ws val =
@@ -1415,7 +1418,7 @@ ws val =
         [ property "width" <| lengthScale val ]
 
 
-{-| `wp` IS A WORK IN PROGRESS 
+{-| `wp` IS A WORK IN PROGRESS
 -}
 wp : Int -> Style
 wp val =
@@ -1423,7 +1426,7 @@ wp val =
         [ property "width" <| percent val ]
 
 
-{-| `wsMin` IS A WORK IN PROGRESS 
+{-| `wsMin` IS A WORK IN PROGRESS
 -}
 wsMin : Int -> Style
 wsMin val =
@@ -1431,7 +1434,7 @@ wsMin val =
         [ property "min-width" <| lengthScale val ]
 
 
-{-| `wpMin` IS A WORK IN PROGRESS 
+{-| `wpMin` IS A WORK IN PROGRESS
 -}
 wpMin : Int -> Style
 wpMin val =
@@ -1439,7 +1442,7 @@ wpMin val =
         [ property "min-width" <| percent val ]
 
 
-{-| `chMin` IS A WORK IN PROGRESS 
+{-| `chMin` IS A WORK IN PROGRESS
 -}
 chMin : Int -> Style
 chMin val =
@@ -1447,7 +1450,7 @@ chMin val =
         [ property "min-width" <| String.fromInt val ++ "ch" ]
 
 
-{-| `wThird` IS A WORK IN PROGRESS 
+{-| `wThird` IS A WORK IN PROGRESS
 -}
 wThird : Style
 wThird =
@@ -1455,7 +1458,7 @@ wThird =
         [ property "width" "33.33333%" ]
 
 
-{-| `wTwoThirds` IS A WORK IN PROGRESS 
+{-| `wTwoThirds` IS A WORK IN PROGRESS
 -}
 wTwoThirds : Style
 wTwoThirds =
@@ -1463,7 +1466,7 @@ wTwoThirds =
         [ property "width" "66.66667%" ]
 
 
-{-| `wAuto` IS A WORK IN PROGRESS 
+{-| `wAuto` IS A WORK IN PROGRESS
 -}
 wAuto : Style
 wAuto =
@@ -1471,7 +1474,7 @@ wAuto =
         [ property "width" "auto" ]
 
 
-{-| `overflowVisible` IS A WORK IN PROGRESS 
+{-| `overflowVisible` IS A WORK IN PROGRESS
 -}
 overflowVisible : Style
 overflowVisible =
@@ -1479,7 +1482,7 @@ overflowVisible =
         [ property "overflow" "visible" ]
 
 
-{-| `overflowHidden` IS A WORK IN PROGRESS 
+{-| `overflowHidden` IS A WORK IN PROGRESS
 -}
 overflowHidden : Style
 overflowHidden =
@@ -1487,7 +1490,7 @@ overflowHidden =
         [ property "overflow" "hidden" ]
 
 
-{-| `overflowScroll` IS A WORK IN PROGRESS 
+{-| `overflowScroll` IS A WORK IN PROGRESS
 -}
 overflowScroll : Style
 overflowScroll =
@@ -1495,7 +1498,7 @@ overflowScroll =
         [ property "overflow" "scroll" ]
 
 
-{-| `overflowAuto` IS A WORK IN PROGRESS 
+{-| `overflowAuto` IS A WORK IN PROGRESS
 -}
 overflowAuto : Style
 overflowAuto =
@@ -1503,7 +1506,7 @@ overflowAuto =
         [ property "overflow" "auto" ]
 
 
-{-| `overflowXvisible` IS A WORK IN PROGRESS 
+{-| `overflowXvisible` IS A WORK IN PROGRESS
 -}
 overflowXvisible : Style
 overflowXvisible =
@@ -1511,7 +1514,7 @@ overflowXvisible =
         [ property "overflow-x" "visible" ]
 
 
-{-| `overflowXhidden` IS A WORK IN PROGRESS 
+{-| `overflowXhidden` IS A WORK IN PROGRESS
 -}
 overflowXhidden : Style
 overflowXhidden =
@@ -1519,7 +1522,7 @@ overflowXhidden =
         [ property "overflow-x" "hidden" ]
 
 
-{-| `overflowXscroll` IS A WORK IN PROGRESS 
+{-| `overflowXscroll` IS A WORK IN PROGRESS
 -}
 overflowXscroll : Style
 overflowXscroll =
@@ -1527,7 +1530,7 @@ overflowXscroll =
         [ property "overflow-x" "scroll" ]
 
 
-{-| `overflowXauto` IS A WORK IN PROGRESS 
+{-| `overflowXauto` IS A WORK IN PROGRESS
 -}
 overflowXauto : Style
 overflowXauto =
@@ -1535,7 +1538,7 @@ overflowXauto =
         [ property "overflow-x" "auto" ]
 
 
-{-| `overflowYvisible` IS A WORK IN PROGRESS 
+{-| `overflowYvisible` IS A WORK IN PROGRESS
 -}
 overflowYvisible : Style
 overflowYvisible =
@@ -1543,7 +1546,7 @@ overflowYvisible =
         [ property "overflow-y" "visible" ]
 
 
-{-| `overflowYhidden` IS A WORK IN PROGRESS 
+{-| `overflowYhidden` IS A WORK IN PROGRESS
 -}
 overflowYhidden : Style
 overflowYhidden =
@@ -1551,7 +1554,7 @@ overflowYhidden =
         [ property "overflow-y" "hidden" ]
 
 
-{-| `overflowYscroll` IS A WORK IN PROGRESS 
+{-| `overflowYscroll` IS A WORK IN PROGRESS
 -}
 overflowYscroll : Style
 overflowYscroll =
@@ -1559,7 +1562,7 @@ overflowYscroll =
         [ property "overflow-y" "scroll" ]
 
 
-{-| `overflowYauto` IS A WORK IN PROGRESS 
+{-| `overflowYauto` IS A WORK IN PROGRESS
 -}
 overflowYauto : Style
 overflowYauto =
@@ -1567,7 +1570,7 @@ overflowYauto =
         [ property "overflow-y" "auto" ]
 
 
-{-| `static` IS A WORK IN PROGRESS 
+{-| `static` IS A WORK IN PROGRESS
 -}
 static : Style
 static =
@@ -1575,7 +1578,7 @@ static =
         [ property "position" "static" ]
 
 
-{-| `relative` IS A WORK IN PROGRESS 
+{-| `relative` IS A WORK IN PROGRESS
 -}
 relative : Style
 relative =
@@ -1583,7 +1586,7 @@ relative =
         [ property "position" "relative" ]
 
 
-{-| `absolute` IS A WORK IN PROGRESS 
+{-| `absolute` IS A WORK IN PROGRESS
 -}
 absolute : Style
 absolute =
@@ -1591,7 +1594,7 @@ absolute =
         [ property "position" "absolute" ]
 
 
-{-| `fixed` IS A WORK IN PROGRESS 
+{-| `fixed` IS A WORK IN PROGRESS
 -}
 fixed : Style
 fixed =
@@ -1599,7 +1602,7 @@ fixed =
         [ property "position" "fixed" ]
 
 
-{-| `sticky` IS A WORK IN PROGRESS 
+{-| `sticky` IS A WORK IN PROGRESS
 -}
 sticky : Style
 sticky =
@@ -1609,15 +1612,15 @@ sticky =
         ]
 
 
-{-| `o` IS A WORK IN PROGRESS 
+{-| `o` IS A WORK IN PROGRESS
 -}
 o : Float -> Style
 o val =
     Css.batch
-        [ property "opacity" <| String.fromFloat (val / 100) ]
+        [ property "opacity" <| String.fromFloat val ]
 
 
-{-| `rotate` IS A WORK IN PROGRESS 
+{-| `rotate` IS A WORK IN PROGRESS
 -}
 rotate : Float -> Style
 rotate val =
@@ -1627,7 +1630,7 @@ rotate val =
         ]
 
 
-{-| `c` IS A WORK IN PROGRESS 
+{-| `c` IS A WORK IN PROGRESS
 -}
 c : HSLuv -> Style
 c val =
@@ -1635,7 +1638,7 @@ c val =
         [ property "color" <| hsluvToCssString val ]
 
 
-{-| `bg` IS A WORK IN PROGRESS 
+{-| `bg` IS A WORK IN PROGRESS
 -}
 bg : HSLuv -> Style
 bg val =
@@ -1643,7 +1646,7 @@ bg val =
         [ property "background-color" <| hsluvToCssString val ]
 
 
-{-| `b` IS A WORK IN PROGRESS 
+{-| `b` IS A WORK IN PROGRESS
 -}
 b : HSLuv -> Style
 b val =
@@ -1651,7 +1654,7 @@ b val =
         [ property "border-color" <| hsluvToCssString val ]
 
 
-{-| `bgInherit` IS A WORK IN PROGRESS 
+{-| `bgInherit` IS A WORK IN PROGRESS
 -}
 bgInherit : Style
 bgInherit =
@@ -1659,7 +1662,7 @@ bgInherit =
         [ property "background-color" "inherit" ]
 
 
-{-| `bInherit` IS A WORK IN PROGRESS 
+{-| `bInherit` IS A WORK IN PROGRESS
 -}
 bInherit : Style
 bInherit =
@@ -1667,42 +1670,42 @@ bInherit =
         [ property "border-color" "transparent" ]
 
 
-{-| `pa` IS A WORK IN PROGRESS 
+{-| `pa` IS A WORK IN PROGRESS
 -}
 pa : Int -> Style
 pa val =
     Css.batch [ property "padding" <| spacingScale val ]
 
 
-{-| `pl` IS A WORK IN PROGRESS 
+{-| `pl` IS A WORK IN PROGRESS
 -}
 pl : Int -> Style
 pl val =
     Css.batch [ property "padding-left" <| spacingScale val ]
 
 
-{-| `pr` IS A WORK IN PROGRESS 
+{-| `pr` IS A WORK IN PROGRESS
 -}
 pr : Int -> Style
 pr val =
     Css.batch [ property "padding-right" <| spacingScale val ]
 
 
-{-| `pt` IS A WORK IN PROGRESS 
+{-| `pt` IS A WORK IN PROGRESS
 -}
 pt : Int -> Style
 pt val =
     Css.batch [ property "padding-top" <| spacingScale val ]
 
 
-{-| `pb` IS A WORK IN PROGRESS 
+{-| `pb` IS A WORK IN PROGRESS
 -}
 pb : Int -> Style
 pb val =
     Css.batch [ property "padding-bottom" <| spacingScale val ]
 
 
-{-| `pv` IS A WORK IN PROGRESS 
+{-| `pv` IS A WORK IN PROGRESS
 -}
 pv : Int -> Style
 pv val =
@@ -1712,7 +1715,7 @@ pv val =
         ]
 
 
-{-| `ph` IS A WORK IN PROGRESS 
+{-| `ph` IS A WORK IN PROGRESS
 -}
 ph : Int -> Style
 ph val =
@@ -1722,42 +1725,42 @@ ph val =
         ]
 
 
-{-| `ma` IS A WORK IN PROGRESS 
+{-| `ma` IS A WORK IN PROGRESS
 -}
 ma : Int -> Style
 ma val =
     Css.batch [ property "margin" <| spacingScale val ]
 
 
-{-| `ml` IS A WORK IN PROGRESS 
+{-| `ml` IS A WORK IN PROGRESS
 -}
 ml : Int -> Style
 ml val =
     Css.batch [ property "margin-left" <| spacingScale val ]
 
 
-{-| `mr` IS A WORK IN PROGRESS 
+{-| `mr` IS A WORK IN PROGRESS
 -}
 mr : Int -> Style
 mr val =
     Css.batch [ property "margin-right" <| spacingScale val ]
 
 
-{-| `mt` IS A WORK IN PROGRESS 
+{-| `mt` IS A WORK IN PROGRESS
 -}
 mt : Int -> Style
 mt val =
     Css.batch [ property "margin-top" <| spacingScale val ]
 
 
-{-| `mb` IS A WORK IN PROGRESS 
+{-| `mb` IS A WORK IN PROGRESS
 -}
 mb : Int -> Style
 mb val =
     Css.batch [ property "margin-bottom" <| spacingScale val ]
 
 
-{-| `mv` IS A WORK IN PROGRESS 
+{-| `mv` IS A WORK IN PROGRESS
 -}
 mv : Int -> Style
 mv val =
@@ -1767,7 +1770,7 @@ mv val =
         ]
 
 
-{-| `mh` IS A WORK IN PROGRESS 
+{-| `mh` IS A WORK IN PROGRESS
 -}
 mh : Int -> Style
 mh val =
@@ -1777,42 +1780,42 @@ mh val =
         ]
 
 
-{-| `na` IS A WORK IN PROGRESS 
+{-| `na` IS A WORK IN PROGRESS
 -}
 na : Int -> Style
 na val =
     Css.batch [ property "margin" <| spacingScale -val ]
 
 
-{-| `nl` IS A WORK IN PROGRESS 
+{-| `nl` IS A WORK IN PROGRESS
 -}
 nl : Int -> Style
 nl val =
     Css.batch [ property "margin-left" <| spacingScale -val ]
 
 
-{-| `nr` IS A WORK IN PROGRESS 
+{-| `nr` IS A WORK IN PROGRESS
 -}
 nr : Int -> Style
 nr val =
     Css.batch [ property "margin-right" <| spacingScale -val ]
 
 
-{-| `nt` IS A WORK IN PROGRESS 
+{-| `nt` IS A WORK IN PROGRESS
 -}
 nt : Int -> Style
 nt val =
     Css.batch [ property "margin-top" <| spacingScale -val ]
 
 
-{-| `nb` IS A WORK IN PROGRESS 
+{-| `nb` IS A WORK IN PROGRESS
 -}
 nb : Int -> Style
 nb val =
     Css.batch [ property "margin-bottom" <| spacingScale -val ]
 
 
-{-| `nv` IS A WORK IN PROGRESS 
+{-| `nv` IS A WORK IN PROGRESS
 -}
 nv : Int -> Style
 nv val =
@@ -1822,7 +1825,7 @@ nv val =
         ]
 
 
-{-| `nh` IS A WORK IN PROGRESS 
+{-| `nh` IS A WORK IN PROGRESS
 -}
 nh : Int -> Style
 nh val =
@@ -1832,7 +1835,7 @@ nh val =
         ]
 
 
-{-| `collapse` IS A WORK IN PROGRESS 
+{-| `collapse` IS A WORK IN PROGRESS
 -}
 collapse : Style
 collapse =
@@ -1842,7 +1845,7 @@ collapse =
         ]
 
 
-{-| `stripeLight` IS A WORK IN PROGRESS 
+{-| `stripeLight` IS A WORK IN PROGRESS
 -}
 stripeLight : Style
 stripeLight =
@@ -1850,7 +1853,7 @@ stripeLight =
         [ property "background-color" "hsla(0,0%,100%,.1)" ]
 
 
-{-| `stripeDark` IS A WORK IN PROGRESS 
+{-| `stripeDark` IS A WORK IN PROGRESS
 -}
 stripeDark : Style
 stripeDark =
@@ -1858,7 +1861,7 @@ stripeDark =
         [ property "background-color" "rgba(0,0,0,.1)" ]
 
 
-{-| `strike` IS A WORK IN PROGRESS 
+{-| `strike` IS A WORK IN PROGRESS
 -}
 strike : Style
 strike =
@@ -1866,7 +1869,7 @@ strike =
         [ property "text-decoration" "line-through" ]
 
 
-{-| `underline` IS A WORK IN PROGRESS 
+{-| `underline` IS A WORK IN PROGRESS
 -}
 underline : Style
 underline =
@@ -1874,7 +1877,7 @@ underline =
         [ property "text-decoration" "underline" ]
 
 
-{-| `noUnderline` IS A WORK IN PROGRESS 
+{-| `noUnderline` IS A WORK IN PROGRESS
 -}
 noUnderline : Style
 noUnderline =
@@ -1882,7 +1885,7 @@ noUnderline =
         [ property "text-decoration" "none" ]
 
 
-{-| `tl` IS A WORK IN PROGRESS 
+{-| `tl` IS A WORK IN PROGRESS
 -}
 tl : Style
 tl =
@@ -1890,7 +1893,7 @@ tl =
         [ property "text-align" "left" ]
 
 
-{-| `tr` IS A WORK IN PROGRESS 
+{-| `tr` IS A WORK IN PROGRESS
 -}
 tr : Style
 tr =
@@ -1898,7 +1901,7 @@ tr =
         [ property "text-align" "right" ]
 
 
-{-| `tc` IS A WORK IN PROGRESS 
+{-| `tc` IS A WORK IN PROGRESS
 -}
 tc : Style
 tc =
@@ -1906,7 +1909,7 @@ tc =
         [ property "text-align" "center" ]
 
 
-{-| `tj` IS A WORK IN PROGRESS 
+{-| `tj` IS A WORK IN PROGRESS
 -}
 tj : Style
 tj =
@@ -1914,7 +1917,7 @@ tj =
         [ property "text-align" "justify" ]
 
 
-{-| `ttc` IS A WORK IN PROGRESS 
+{-| `ttc` IS A WORK IN PROGRESS
 -}
 ttc : Style
 ttc =
@@ -1922,7 +1925,7 @@ ttc =
         [ property "text-transform" "capitalize" ]
 
 
-{-| `ttl` IS A WORK IN PROGRESS 
+{-| `ttl` IS A WORK IN PROGRESS
 -}
 ttl : Style
 ttl =
@@ -1930,7 +1933,7 @@ ttl =
         [ property "text-transform" "lowercase" ]
 
 
-{-| `ttu` IS A WORK IN PROGRESS 
+{-| `ttu` IS A WORK IN PROGRESS
 -}
 ttu : Style
 ttu =
@@ -1938,7 +1941,7 @@ ttu =
         [ property "text-transform" "uppercase" ]
 
 
-{-| `ttn` IS A WORK IN PROGRESS 
+{-| `ttn` IS A WORK IN PROGRESS
 -}
 ttn : Style
 ttn =
@@ -1946,7 +1949,7 @@ ttn =
         [ property "text-transform" "none" ]
 
 
-{-| `f` IS A WORK IN PROGRESS 
+{-| `f` IS A WORK IN PROGRESS
 -}
 f : Int -> Style
 f val =
@@ -1954,7 +1957,7 @@ f val =
         [ property "font-size" <| typeScale val ]
 
 
-{-| `measure` IS A WORK IN PROGRESS 
+{-| `measure` IS A WORK IN PROGRESS
 -}
 measure : Style
 measure =
@@ -1962,7 +1965,7 @@ measure =
         [ property "max-width" "30em" ]
 
 
-{-| `measureWide` IS A WORK IN PROGRESS 
+{-| `measureWide` IS A WORK IN PROGRESS
 -}
 measureWide : Style
 measureWide =
@@ -1970,7 +1973,7 @@ measureWide =
         [ property "max-width" "34em" ]
 
 
-{-| `measureNarrow` IS A WORK IN PROGRESS 
+{-| `measureNarrow` IS A WORK IN PROGRESS
 -}
 measureNarrow : Style
 measureNarrow =
@@ -1978,7 +1981,7 @@ measureNarrow =
         [ property "max-width" "20em" ]
 
 
-{-| `indent` IS A WORK IN PROGRESS 
+{-| `indent` IS A WORK IN PROGRESS
 -}
 indent : Style
 indent =
@@ -1989,7 +1992,7 @@ indent =
         ]
 
 
-{-| `smallCaps` IS A WORK IN PROGRESS 
+{-| `smallCaps` IS A WORK IN PROGRESS
 -}
 smallCaps : Style
 smallCaps =
@@ -1997,7 +2000,7 @@ smallCaps =
         [ property "font-variant" "small-caps" ]
 
 
-{-| `truncate` IS A WORK IN PROGRESS 
+{-| `truncate` IS A WORK IN PROGRESS
 -}
 truncate : Style
 truncate =
@@ -2008,7 +2011,7 @@ truncate =
         ]
 
 
-{-| `overflowContainer` IS A WORK IN PROGRESS 
+{-| `overflowContainer` IS A WORK IN PROGRESS
 -}
 overflowContainer : Style
 overflowContainer =
@@ -2016,7 +2019,7 @@ overflowContainer =
         [ property "overflow-y" "scroll" ]
 
 
-{-| `center` IS A WORK IN PROGRESS 
+{-| `center` IS A WORK IN PROGRESS
 -}
 center : Style
 center =
@@ -2026,7 +2029,7 @@ center =
         ]
 
 
-{-| `mrAuto` IS A WORK IN PROGRESS 
+{-| `mrAuto` IS A WORK IN PROGRESS
 -}
 mrAuto : Style
 mrAuto =
@@ -2034,7 +2037,7 @@ mrAuto =
         [ property "margin-right" "auto" ]
 
 
-{-| `mlAuto` IS A WORK IN PROGRESS 
+{-| `mlAuto` IS A WORK IN PROGRESS
 -}
 mlAuto : Style
 mlAuto =
@@ -2042,7 +2045,7 @@ mlAuto =
         [ property "margin-left" "auto" ]
 
 
-{-| `clip` IS A WORK IN PROGRESS 
+{-| `clip` IS A WORK IN PROGRESS
 -}
 clip : Style
 clip =
@@ -2054,7 +2057,7 @@ clip =
         ]
 
 
-{-| `wsNormal` IS A WORK IN PROGRESS 
+{-| `wsNormal` IS A WORK IN PROGRESS
 -}
 wsNormal : Style
 wsNormal =
@@ -2062,7 +2065,7 @@ wsNormal =
         [ property "white-space" "normal" ]
 
 
-{-| `nowrap` IS A WORK IN PROGRESS 
+{-| `nowrap` IS A WORK IN PROGRESS
 -}
 nowrap : Style
 nowrap =
@@ -2070,7 +2073,7 @@ nowrap =
         [ property "white-space" "nowrap" ]
 
 
-{-| `pre` IS A WORK IN PROGRESS 
+{-| `pre` IS A WORK IN PROGRESS
 -}
 pre : Style
 pre =
@@ -2078,7 +2081,7 @@ pre =
         [ property "white-space" "pre" ]
 
 
-{-| `vBase` IS A WORK IN PROGRESS 
+{-| `vBase` IS A WORK IN PROGRESS
 -}
 vBase : Style
 vBase =
@@ -2086,7 +2089,7 @@ vBase =
         [ property "vertical-align" "baseline" ]
 
 
-{-| `vMid` IS A WORK IN PROGRESS 
+{-| `vMid` IS A WORK IN PROGRESS
 -}
 vMid : Style
 vMid =
@@ -2094,7 +2097,7 @@ vMid =
         [ property "vertical-align" "middle" ]
 
 
-{-| `vTop` IS A WORK IN PROGRESS 
+{-| `vTop` IS A WORK IN PROGRESS
 -}
 vTop : Style
 vTop =
@@ -2102,7 +2105,7 @@ vTop =
         [ property "vertical-align" "top" ]
 
 
-{-| `vBtm` IS A WORK IN PROGRESS 
+{-| `vBtm` IS A WORK IN PROGRESS
 -}
 vBtm : Style
 vBtm =
@@ -2111,64 +2114,55 @@ vBtm =
 
 
 
--- 
+--
 -- dim : Style
 -- dim =
 --  Css.batch [
 --  property "opacity" "1"
 --  ]
-
 -- , property "dim,.dim" "focus,.dim" "hover : Style"
 -- , property "dim,.dim" "focus,.dim" "hover ="
 --  Css.batch [
 --  property "transition" "opacity .15s ease-in"
 --  ]
-
 -- , property "dim" "focus,.dim" "hover : Style"
 -- , property "dim" "focus,.dim" "hover ="
 --  Css.batch [
 --  property "opacity" ".5"
 --  ]
-
 -- , property "dim" "active : Style"
 -- , property "dim" "active ="
 --  Css.batch [
 --  property "opacity" ".8"
 -- , property "transition" "opacity .15s ease-out"
 --  ]
-
 -- , property "glow,.glow" "focus,.glow" "hover : Style"
 -- , property "glow,.glow" "focus,.glow" "hover ="
 --  Css.batch [
 --  property "transition" "opacity .15s ease-in"
 --  ]
-
 -- , property "glow" "focus,.glow" "hover : Style"
 -- , property "glow" "focus,.glow" "hover ="
 --  Css.batch [
 --  property "opacity" "1"
 --  ]
-
 -- hide-child .child : Style
 -- hide-child .child =
 --  Css.batch [
 --  property "opacity" "0"
 -- , property "transition" "opacity .15s ease-in"
 --  ]
-
 -- , property "hide-child" "active .child,.hide-child" "focus .child,.hide-child" "hover .child : Style"
 -- , property "hide-child" "active .child,.hide-child" "focus .child,.hide-child" "hover .child ="
 --  Css.batch [
 --  property "opacity" "1"
 -- , property "transition" "opacity .15s ease-in"
 --  ]
-
 -- , property "underline-hover" "focus,.underline-hover" "hover : Style"
 -- , property "underline-hover" "focus,.underline-hover" "hover ="
 --  Css.batch [
 --  property "text-decoration" "underline"
--- 
-
+--
 -- grow : Style
 -- grow =
 --  Css.batch [
@@ -2181,21 +2175,18 @@ vBtm =
 -- , property "transition" "transform .25s ease-out"
 -- , property "transition" "transform .25s ease-out,-webkit-transform .25s ease-out"
 --  ]
-
 -- , property "grow" "focus,.grow" "hover : Style"
 -- , property "grow" "focus,.grow" "hover ="
 --  Css.batch [
 --  property "-webkit-transform" "scale(1.05)"
 -- , property "transform" "scale(1.05)"
 --  ]
-
 -- , property "grow" "active : Style"
 -- , property "grow" "active ="
 --  Css.batch [
 --  property "-webkit-transform" "scale(.9)"
 -- , property "transform" "scale(.9)"
 --  ]
-
 -- grow-large : Style
 -- grow-large =
 --  Css.batch [
@@ -2208,34 +2199,29 @@ vBtm =
 -- , property "transition" "transform .25s ease-in-out"
 -- , property "transition" "transform .25s ease-in-out,-webkit-transform .25s ease-in-out"
 --  ]
-
 -- , property "grow-large" "focus,.grow-large" "hover : Style"
 -- , property "grow-large" "focus,.grow-large" "hover ="
 --  Css.batch [
 --  property "-webkit-transform" "scale(1.2)"
 -- , property "transform" "scale(1.2)"
 --  ]
-
 -- , property "grow-large" "active : Style"
 -- , property "grow-large" "active ="
 --  Css.batch [
 --  property "-webkit-transform" "scale(.95)"
 -- , property "transform" "scale(.95)"
 --  ]
-
 -- , property "pointer" "hover,.shadow-hover : Style"
 -- , property "pointer" "hover,.shadow-hover ="
 --  Css.batch [
 --  property "cursor" "pointer"
 --  ]
-
 -- shadow-hover : Style
 -- shadow-hover =
 --  Css.batch [
 --  property "position" "relative"
 -- , property "transition" "all .5s cubic-bezier(.165,.84,.44,1)"
 --  ]
-
 -- , property "shadow-hover" "after : Style"
 -- , property "shadow-hover" "after ="
 --  Css.batch [
@@ -2251,13 +2237,11 @@ vBtm =
 -- , property "z-index" "-1"
 -- , property "transition" "opacity .5s cubic-bezier(.165,.84,.44,1)"
 --  ]
-
 -- , property "shadow-hover" "focus" "after,.shadow-hover" "hover" "after : Style"
 -- , property "shadow-hover" "focus" "after,.shadow-hover" "hover" "after ="
 --  Css.batch [
 --  property "opacity" "1"
 --  ]
-
 -- , property "bg-animate,.bg-animate" "focus,.bg-animate" "hover : Style"
 -- , property "bg-animate,.bg-animate" "focus,.bg-animate" "hover ="
 --  Css.batch [
@@ -2265,7 +2249,7 @@ vBtm =
 --  ]
 
 
-{-| `z` IS A WORK IN PROGRESS 
+{-| `z` IS A WORK IN PROGRESS
 -}
 z : Int -> Style
 z val =
@@ -2273,7 +2257,7 @@ z val =
         [ property "z-index" <| String.fromInt val ]
 
 
-{-| `zMax` IS A WORK IN PROGRESS 
+{-| `zMax` IS A WORK IN PROGRESS
 -}
 zMax : Style
 zMax =
@@ -2281,7 +2265,7 @@ zMax =
         [ property "z-index" "2147483647" ]
 
 
-{-| `zInherit` IS A WORK IN PROGRESS 
+{-| `zInherit` IS A WORK IN PROGRESS
 -}
 zInherit : Style
 zInherit =
@@ -2289,7 +2273,7 @@ zInherit =
         [ property "z-index" "inherit" ]
 
 
-{-| `zInitial` IS A WORK IN PROGRESS 
+{-| `zInitial` IS A WORK IN PROGRESS
 -}
 zInitial : Style
 zInitial =
@@ -2297,7 +2281,7 @@ zInitial =
         [ property "z-index" "auto" ]
 
 
-{-| `zUnset` IS A WORK IN PROGRESS 
+{-| `zUnset` IS A WORK IN PROGRESS
 -}
 zUnset : Style
 zUnset =
@@ -2307,7 +2291,6 @@ zUnset =
 
 
 -- NESTED --
-
 -- nested-copy-line-height ol,.nested-copy-line-height p,.nested-copy-line-height ul : Style
 -- nested-copy-line-height ol,.nested-copy-line-height p,.nested-copy-line-height ul =
 --  Css.batch [
@@ -2317,7 +2300,6 @@ zUnset =
 --  Css.batch [
 --  property "line-height" "1.25"
 --  ]
-
 -- nested-list-reset ol,.nested-list-reset ul : Style
 -- nested-list-reset ol,.nested-list-reset ul =
 --  Css.batch [
@@ -2325,7 +2307,6 @@ zUnset =
 -- , property "margin-left" "0"
 -- , property "list-style-type" "none"
 --  ]
-
 -- nested-copy-indent p+p : Style
 -- nested-copy-indent p+p =
 --  Css.batch [
@@ -2333,13 +2314,11 @@ zUnset =
 -- , property "margin-top" "0"
 -- , property "margin-bottom" "0"
 --  ]
-
 -- nested-copy-separator p+p : Style
 -- nested-copy-separator p+p =
 --  Css.batch [
 --  property "margin-top" "1.5em"
 --  ]
-
 -- nested-img img : Style
 -- nested-img img =
 --  Css.batch [
@@ -2347,61 +2326,53 @@ zUnset =
 -- , property "max-width" "100%"
 -- , property "display" "block"
 --  ]
-
 -- nested-links a : Style
 -- nested-links a =
 --  Css.batch [
 --  property "color" "#357edd"
 -- , property "transition" "color .15s ease-in"
 --  ]
-
 -- , property "nested-links a" "focus,.nested-links a" "hover : Style"
 -- , property "nested-links a" "focus,.nested-links a" "hover ="
 --  Css.batch [
 --  property "color" "#96ccff"
 -- , property "transition" "color .15s ease-in"
 --  ]
--- DEBUG 
+-- DEBUG
 --
 -- debug * : Style
 -- debug * =
 --  Css.batch [
 --  property "outline" "1px solid gold"
 --  ]
-
 -- debug-white * : Style
 -- debug-white * =
 --  Css.batch [
 --  property "outline" "1px solid #fff"
 --  ]
-
 -- debug-black * : Style
 -- debug-black * =
 --  Css.batch [
 --  property "outline" "1px solid #000"
 --  ]
-
 -- debug-grid : Style
 -- debug-grid =
 --  Css.batch [
 --  property "background" "transparent url(data" "image/png"
 -- base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=) repeat 0 0
 --  ]
-
 -- debug-grid-16 : Style
 -- debug-grid-16 =
 --  Css.batch [
 --  property "background" "transparent url(data" "image/png"
 -- base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=) repeat 0 0
 --  ]
-
 -- debug-grid-8-solid : Style
 -- debug-grid-8-solid =
 --  Css.batch [
 --  property "background" "#fff url(data" "image/gif"
 -- base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==) repeat 0 0
 --  ]
-
 -- debug-grid-16-solid : Style
 -- debug-grid-16-solid =
 --  Css.batch [
@@ -2410,7 +2381,7 @@ zUnset =
 --  ]
 
 
-{-| `contentBox` IS A WORK IN PROGRESS 
+{-| `contentBox` IS A WORK IN PROGRESS
 -}
 contentBox : Style
 contentBox =
@@ -2418,7 +2389,7 @@ contentBox =
         [ property "box-sizing" "content-box" ]
 
 
-{-| `gpu` IS A WORK IN PROGRESS 
+{-| `gpu` IS A WORK IN PROGRESS
 -}
 gpu : Style
 gpu =
