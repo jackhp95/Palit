@@ -41,6 +41,13 @@ act list =
     batch [ Css.hover list, Css.focus list ]
 
 
+{-| `checked` IS A WORK IN PROGRESS
+-}
+checked : List Style -> Style
+checked list =
+    batch [ Css.checked list ]
+
+
 
 -- COLORS
 
@@ -1625,8 +1632,8 @@ o val =
 rotate : Float -> Style
 rotate val =
     Css.batch
-        [ property "-webkit-transform" <| String.fromFloat val ++ "deg"
-        , property "transform" <| String.fromFloat val ++ "deg"
+        [ property "-webkit-transform" <| "rotate(" ++ String.fromFloat val ++ "deg)"
+        , property "transform" <| "rotate(" ++ String.fromFloat val ++ "deg)"
         ]
 
 
