@@ -50,30 +50,168 @@ checked list =
 
 
 -- COLORS
+red : HSLuv
+red = 
+    HSLuv.color Color.red
 
 
-{-| `black` IS A WORK IN PROGRESS
--}
-black : HSLuv
-black =
-    hsluv360
-        { hue = 0
-        , saturation = 0
-        , lightness = 0
-        , alpha = 1
-        }
+orange : HSLuv
+orange = 
+    HSLuv.color Color.orange
 
 
-{-| `white` IS A WORK IN PROGRESS
--}
+yellow : HSLuv
+yellow = 
+    HSLuv.color Color.yellow
+
+
+green : HSLuv
+green = 
+    HSLuv.color Color.green
+
+
+blue : HSLuv
+blue = 
+    HSLuv.color Color.blue
+
+
+purple : HSLuv
+purple = 
+    HSLuv.color Color.purple
+
+
+brown : HSLuv
+brown = 
+    HSLuv.color Color.brown
+
+
+lightRed : HSLuv
+lightRed = 
+    HSLuv.color Color.lightRed
+
+
+lightOrange : HSLuv
+lightOrange = 
+    HSLuv.color Color.lightOrange
+
+
+lightYellow : HSLuv
+lightYellow = 
+    HSLuv.color Color.lightYellow
+
+
+lightGreen : HSLuv
+lightGreen = 
+    HSLuv.color Color.lightGreen
+
+
+lightBlue : HSLuv
+lightBlue = 
+    HSLuv.color Color.lightBlue
+
+
+lightPurple : HSLuv
+lightPurple = 
+    HSLuv.color Color.lightPurple
+
+
+lightBrown : HSLuv
+lightBrown = 
+    HSLuv.color Color.lightBrown
+
+
+
+darkRed : HSLuv
+darkRed = 
+    HSLuv.color Color.darkRed
+
+
+darkOrange : HSLuv
+darkOrange = 
+    HSLuv.color Color.darkOrange
+
+
+darkYellow : HSLuv
+darkYellow = 
+    HSLuv.color Color.darkYellow
+
+
+darkGreen : HSLuv
+darkGreen = 
+    HSLuv.color Color.darkGreen
+
+
+darkBlue : HSLuv
+darkBlue = 
+    HSLuv.color Color.darkBlue
+
+
+darkPurple : HSLuv
+darkPurple = 
+    HSLuv.color Color.darkPurple
+
+
+darkBrown : HSLuv
+darkBrown = 
+    HSLuv.color Color.darkBrown
+
+
+
 white : HSLuv
-white =
-    hsluv360
-        { hue = 0
-        , saturation = 0
-        , lightness = 100
-        , alpha = 1
-        }
+white = 
+    HSLuv.color Color.white
+
+
+lightGrey : HSLuv
+lightGrey = 
+    HSLuv.color Color.lightGrey
+
+
+grey : HSLuv
+grey = 
+    HSLuv.color Color.grey
+
+
+darkGrey : HSLuv
+darkGrey = 
+    HSLuv.color Color.darkGrey
+
+
+lightCharcoal : HSLuv
+lightCharcoal = 
+    HSLuv.color Color.lightCharcoal
+
+
+charcoal : HSLuv
+charcoal = 
+    HSLuv.color Color.charcoal
+
+
+darkCharcoal : HSLuv
+darkCharcoal = 
+    HSLuv.color Color.darkCharcoal
+
+
+black : HSLuv
+black = 
+    HSLuv.color Color.black
+
+
+
+lightGray : HSLuv
+lightGray = 
+    HSLuv.color Color.lightGray
+
+
+gray : HSLuv
+gray = 
+    HSLuv.color Color.gray
+
+
+darkGray : HSLuv
+darkGray = 
+    HSLuv.color Color.darkGray
+
 
 
 {-| `transparent` IS A WORK IN PROGRESS
@@ -1330,6 +1468,14 @@ pointerNone : Style
 pointerNone =
     Css.batch
         [ property "pointer-events" "none" ]
+
+
+{-| `pointerAuto` IS A WORK IN PROGRESS
+-}
+pointerAuto : Style
+pointerAuto =
+    Css.batch
+        [ property "pointer-events" "auto" ]
 
 
 {-| `link` IS A WORK IN PROGRESS
